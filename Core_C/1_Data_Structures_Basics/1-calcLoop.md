@@ -1,1 +1,53 @@
 # Write a program to calculate the time taken to sum integers from 1 to N using a simple loop. Repeat for increasing N and observe how execution time grows. (Empirical observation of linear time).
+
+```java
+
+#include <stdio.h>
+#include <time.h>
+
+int main() {
+    long long N, i, sum;
+    clock_t start, end;
+    double cpu_time_used;
+
+    long long test_cases[] = {10000, 50000, 100000, 500000, 1000000};
+    int size = sizeof(test_cases) / sizeof(test_cases[0]);
+
+    for (int t = 0; t < size; t++) {
+        N = test_cases[t];
+        sum = 0;
+
+        // Record start time
+        start = clock();
+
+        // Summation loop
+        for (i = 1; i <= N; i++) {
+            sum += i;
+        }
+
+        // Record end time
+        end = clock();
+
+        cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
+
+        printf("N = %lld, Sum = %lld, Time taken = %f seconds\n", N, sum, cpu_time_used);
+    }
+
+    return 0;
+}
+
+
+```
+
+# Output:
+
+```java
+
+N = 10000, Sum = 50005000, Time taken = 0.000001 seconds
+N = 50000, Sum = 1250025000, Time taken = 0.000004 seconds
+N = 100000, Sum = 5000050000, Time taken = 0.000009 seconds
+N = 500000, Sum = 125000250000, Time taken = 0.000046 seconds
+N = 1000000, Sum = 500000500000, Time taken = 0.000093 seconds
+
+
+```
