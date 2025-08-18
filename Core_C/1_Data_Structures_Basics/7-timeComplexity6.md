@@ -1,0 +1,71 @@
+# Write a program to find the largest prime factor of a given number N. Analyze its time complexity.
+
+/*
+Program: Largest Prime Factor of a Given Number N
+
+This program finds the largest prime factor of a given number N
+using trial division method.
+
+Algorithm:
+1. Divide out all factors of 2 (if present).
+2. Then check odd factors from 3 up to sqrt(N).
+3. Whenever we find a factor, divide it out completely.
+4. If N > 2 at the end, then N itself is a prime factor (and the largest).
+
+Time Complexity Analysis:
+
+- We only check divisors up to sqrt(N).
+- Each division reduces N, so it becomes smaller as we progress.
+- Worst case: N is prime, so we check all odd numbers up to sqrt(N).
+
+Therefore:
+👉 Time Complexity = O(√N)
+👉 Space Complexity = O(1)
+
+Example:
+
+Input: 13195
+Prime factors = 5, 7, 13, 29
+Largest prime factor = 29
+*/
+
+```c
+
+#include <stdio.h>
+
+// Function to find the largest prime factor
+long long largestPrimeFactor(long long n) {
+    long long maxPrime = -1;
+
+    // Step 1: Divide out factors of 2
+    while (n % 2 == 0) {
+        maxPrime = 2;
+        n /= 2;
+    }
+
+    // Step 2: Check odd factors
+    for (long long i = 3; i * i <= n; i += 2) {
+        while (n % i == 0) {
+            maxPrime = i;
+            n /= i;
+        }
+    }
+
+    // Step 3: If n > 2, then n itself is prime
+    if (n > 2) {
+        maxPrime = n;
+    }
+
+    return maxPrime;
+}
+
+int main() {
+    long long n;
+    printf("Enter a number: ");
+    scanf("%lld", &n);
+
+    printf("Largest prime factor of %lld is: %lld\n", n, largestPrimeFactor(n));
+    return 0;
+}
+
+```
