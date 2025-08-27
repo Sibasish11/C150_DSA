@@ -65,3 +65,17 @@ int main() {
 
 
 ```
+
+
+## ✅ Example Run:
+```c
+Enter number of elements (<= 100): 5
+Enter 5 elements: 10 20 30 40 50
+Enter position to delete (0 to 4): 2
+Element deleted successfully.
+Array: 10 20 40 50
+```
+
+## If you enter an invalid position:
+
+Invalid position! Must be between 0 and 4.
