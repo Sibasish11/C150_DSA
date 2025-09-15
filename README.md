@@ -10,7 +10,6 @@ The **Data Structures with Competitive Coding** course focuses on mastering algo
 - Implementing dynamic data structures (e.g., linked lists, binary trees)
 - Applying sub-quadratic sorting and searching algorithms
 - Solving coding problems under timed conditions
-- Preparing for software development roles
 
 The syllabus is divided into seven modules:
 1. **Data Structures Basics** (Complexity analysis, algorithms, pseudocode)
@@ -33,39 +32,28 @@ This repository is organized to reflect the course's modular structure. Each mod
 ├──5_Graphs/
 ├──6_Hashing_Heaps/
 ├──7_Sorting_Searching/
-├── docs/
-│   ├── syllabus.md
-│   └── progress_tracker.md
 ├── README.md
+
 ```
 
 - **Module Directories**: Each module folder contains solutions to the practice questions, named according to the problem number and description.
-- **docs/**: Contains the course syllabus (`syllabus.md`) and a progress tracker (`progress_tracker.md`) to monitor my completion status.
-
-## Progress Tracking
-
-I will update the `progress_tracker.md` file in the `docs/` directory to reflect my progress. Each problem will be marked as:
-- **Optimized**: Solution refined for better performance or readability.
-
 
 ## How to Use This Repository
 
 1. **Browse Solutions**: Navigate to the relevant module folder to view solutions for specific problems.
-2. **Check Progress**: Refer to `docs/progress_tracker.md` for an overview of completed problems and ongoing work.
-3. **Run Code**: Most solutions are written in C. To run a program:
+2. **Run Code**: Most solutions are written in C. To run a program:
    - Ensure you have a C compiler installed.
    - Compile the code.
    - Run the executable.
-4. **Contribute or Suggest**: If you have suggestions for improving solutions or alternative approaches, feel free to open an issue or submit a pull request.
+3. **Contribute or Suggest**: If you have suggestions for improving solutions or alternative approaches, feel free to open an issue or submit a pull request.
 
 ## Goals
 
 Through this repository, I aim to:
 - Solve all 150 practice questions systematically.
-- Analyze the time and space complexity of each solution.
+- Analyze the time and space complexity of solutions.
 - Optimize solutions for efficiency where possible.
 - Document key insights and learning outcomes.
-- Build a portfolio of competitive coding solutions to showcase my skills.
 
 ## Technologies Used
 
@@ -73,9 +61,8 @@ Through this repository, I aim to:
 - **Tools**: Standard C compiler.
 - **Testing**: Manual testing with sample inputs for validation.
 
-
 ## Acknowledgments
 
-- Thanks to the **Data Structures with Competitive Coding** course instructor for designing a comprehensive syllabus.
+- Thanks to @Soumitra Sir, my **Data Structures with Competitive Coding** course instructor for guiding me to deal with the comprehensive syllabus.
 
-Happy coding! 🚀
+More on the way boyss! 😉🚀
